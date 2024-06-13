@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMP YPI Al-Huda Tasikmalaya</title>
+    <title>Loading...</title>
     <style>
         body {
             display: flex;
@@ -16,17 +16,17 @@
         }
         .container {
             text-align: center;
-            animation: fadeIn 2s, fadeOut 2s 5s; /* Adjust timing as needed */
+            animation: fadeIn 1s, fadeOut 1s 3s;
         }
         .container img {
             max-width: 100%;
             height: auto;
-            animation: zoomIn 2s, zoomOut 2s 5s; /* Adjust timing as needed */
+            animation: zoomIn 2s, zoomOut 2s 5s;
         }
         .container h1 {
             font-family: Arial, sans-serif;
             margin-top: 20px;
-            animation: slideIn 2s, slideOut 2s 5s; /* Adjust timing as needed */
+            animation: slideIn 1s, slideOut 1s 3s;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -53,10 +53,17 @@
             to { transform: translateY(100%); }
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                window.location.href = '/login';
+            }, 3500); // Adjust the timeout to match the animation duration
+        });
+    </script>
 </head>
 <body>
     <div class="container">
-        <img src="{{ asset('/img/Logo AL-HUDA.png') }}" alt="SMP YPI Al-Huda Tasikmalaya">
+        <img src="{{ asset('img/Logo AL-HUDA.png') }}" alt="SMP YPI Al-Huda Tasikmalaya">
         <h1>SMP YPI AL-HUDA</h1>
         <h1>TASIKMALAYA</h1>
     </div>
