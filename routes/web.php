@@ -30,6 +30,17 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::post('/checkin', [App\Http\Controllers\AttendanceController::class, 'checkIn']);
+Route::post('/checkout', [App\Http\Controllers\AttendanceController::class, 'checkOut']);
+
+
+// Route::get('/home', [HomeController::class, 'index']);
+
+
 // Route::get('/register', function () {
 //     return view('register');
 // });
