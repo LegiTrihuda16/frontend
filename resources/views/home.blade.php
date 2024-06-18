@@ -16,7 +16,8 @@
             height: 100vh;
         }
         .container {
-            width: 90%;
+            width:100%;
+            height:95%;
             max-width: 1200px;
             background-color: #e0e0e0;
             padding: 20px;
@@ -52,7 +53,7 @@
             padding: 20px;
             border-radius: 10px;
             flex: 1;
-            margin: 0 10px;
+            margin: 100px 50px  10px;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -67,7 +68,7 @@
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            width: 45%;
+            width: 25%;
             cursor: pointer;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }

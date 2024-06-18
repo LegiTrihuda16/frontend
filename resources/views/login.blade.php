@@ -72,7 +72,7 @@
             @csrf
             <input type="text" name="username" placeholder="Nama Pengguna" required>
             <input type="password" name="password" placeholder="Password" required>
-            <a href="#">Lupa Password?</a>
+            <a href="forgot-password">Lupa Password?</a>
             <button type="submit">Login</button>
             <a href="register">Belum punya akun? Daftar sekarang</a>
         </form>
