@@ -119,7 +119,7 @@
         <div class="header">
             <img src="{{ asset('img/Logo AL-HUDA.png') }}" alt="SMP YPI Al-Huda Tasikmalaya">
             <div class="title">SMP YPI AL-HUDA</div>
-            <div class="profile">👤</div>
+            <button><a href="biodata"><div>👤</div></a></button>
         </div>
         <div class="content">
             <div class="section">

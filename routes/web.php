@@ -5,6 +5,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AbsenController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\BiodataController;
+
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
@@ -47,6 +49,9 @@ Route::post('/checkout', [App\Http\Controllers\AttendanceController::class, 'che
 
 Route::post('/absen/masuk', [AbsenController::class, 'absenMasuk']);
 Route::post('/absen/pulang', [AbsenController::class, 'absenPulang']);
+
+
+Route::get('/biodata', [BiodataController::class, 'index']);
 
 
 

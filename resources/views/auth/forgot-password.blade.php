@@ -10,7 +10,7 @@
     body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-}
+    }
 
 .container {
     max-width: 400px;
@@ -22,39 +22,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    }
 
 .card-header {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-}
+    }
 
 .logo {
     width: 100px; /* Sesuaikan ukuran logo jika perlu */
     height: auto;
     margin-bottom: 1rem;
-}
+    }
 
 .form-group {
     margin-bottom: 1rem;
     width: 100%; /* Pastikan input field memenuhi lebar container */
-}
+    }
 
 .form-check {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-}
+    }
 
 .form-check-input {
     margin-right: 0.5rem;
-}
+    }
 
 .form-check-label a {
     color: #007bff;
     text-decoration: none;
-}
+    }
 
 .form-check-label a:hover {
     text-decoration: underline;

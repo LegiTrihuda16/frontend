@@ -56,7 +56,7 @@
             text-decoration: none;
             display: block;
             margin-top: 10px;
-            text-align: left;
+            text-align: center;
             cursor: pointer;
         }
         .login-container a:hover {
@@ -73,7 +73,7 @@
             <input type="text" name="username" placeholder="Nama Pengguna" required>
             <input type="password" name="password" placeholder="Password" required>
             <a href="forgot-password">Lupa Password?</a>
-            <button type="submit">Login</button>
+            <button type="submit"><a href="home">Login</a></button>
             <a href="register">Belum punya akun? Daftar sekarang</a>
         </form>
     </div>
