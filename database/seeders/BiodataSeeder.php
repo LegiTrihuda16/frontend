@@ -12,11 +12,11 @@ class BiodataSeeder extends Seeder
     public function run()
     {
         Biodata::create([
-            'nama' => 'Asep Komarudin',
-            'npm' => '1234567890',
-            'alamat' => 'Jl. Mangkubumi No.12',
+            'nama' => 'Legi Trihuda Mustaqim',
+            'npm' => '089638466848',
+            'alamat' => 'Jl. Babakan selakaso',
             'agama' => 'Islam',
-            'no_hp' => '081323412938',
+            'no_hp' => '089638466848',
             'status' => 'Aktif'
         ]);
     }

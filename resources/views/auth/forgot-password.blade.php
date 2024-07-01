@@ -38,7 +38,11 @@
 
 .form-group {
     margin-bottom: 1rem;
-    width: 100%; /* Pastikan input field memenuhi lebar container */
+    /* width: 100%; Pastikan input field memenuhi lebar container */
+    /* padding: 45px 50px; */
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
     }
 
 .form-check {
@@ -90,29 +94,32 @@
                 <form method="POST" action="{{ route('forgot-password.send') }}">
                     @csrf
                     <div class="form-group">
-                        <label for="username">Nama Pengguna</label>
-                        <input type="text" class="form-control" id="username" name="username" required>
-                        @error('username')
-                            <span class="text-danger">{{ $message }}</span>
-                        @enderror
+                    @csrf
+                    <input type="text" name="nama_pengguna" placeholder="Nama Pengguna" value="{{ old('nama_pengguna') }}">
+                    @error('nama_pengguna')
+                    <div style="color: red;">{{ $message }}</div>
+                    @enderror
                     </div>
                     <div class="form-group">
-                        <label for="old-password">Password Lama</label>
-                        <input type="password" class="form-control" id="old-password" name="old-password" required>
+                    <input type="password lama" name="password" placeholder="Password lama">
+                    @error('password')
+                    <div style="color: red;">{{ $message }}</div>
+                    @enderror
                     </div>
                     <div class="form-group">
-                        <label for="new-password">Password Baru</label>
-                        <input type="password" class="form-control" id="new-password" name="new-password" required>
+                    <input type="password baru" name="password" placeholder="Password baru">
+                    @error('password')
+                    <div style="color: red;">{{ $message }}</div>
+                    @enderror
                     </div>
                     <div class="form-group">
-                        <label for="new-password-confirm">Konfirmasi Password Baru</label>
-                        <input type="password" class="form-control" id="new-password-confirm" name="new-password_confirmation" required>
+                    <input type="password" name="password_confirmation" placeholder="Konfirmasi Password">
                     </div>
-                    <div class="form-group form-check">
+                    <!-- <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="terms">
                         <label class="form-check-label" for="terms">Saya setuju dengan <a href="#">syarat & ketentuan ini</a></label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary"><a href="login">Login</a></button></button>
                 </form>
             </div>
         </div>

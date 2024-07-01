@@ -33,13 +33,13 @@
             padding: 10px 20px;
             background-color: #333;
             color: #fff;
-            border: none;
+            border: blue;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 25px;
         }
         .form-container button:hover {
-            background-color: #555;
+            background-color: #55b5;
         }
     </style>
 </head>
@@ -76,7 +76,7 @@
                 <div style="color: red;">{{ $message }}</div>
             @enderror
 
-            <button type="submit">Daftar</button>
+            <button type="submit"><a href="register/confirmation">Daftar</a></button>
         </form>
     </div>
 </body>

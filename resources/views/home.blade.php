@@ -138,8 +138,8 @@
         <div class="footer">
             <div class="button" id="absenMasukButton" onclick="checkIn()">Absen Masuk</div>
             <div class="button" id="absenPulangButton" onclick="checkOut()">Absen Pulang</div>
-            <div class="button">😊 Sakit</div>
-            <div class="button">🙋 Izin</div>
+            <div class="button"><a href="sakit">🙋 Sakit</div>
+            <div class="button"><a href="izin">🙋 Izin</div>
         </div>
     </div>
 </body>

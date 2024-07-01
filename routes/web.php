@@ -52,6 +52,17 @@ Route::post('/absen/pulang', [AbsenController::class, 'absenPulang']);
 
 
 Route::get('/biodata', [BiodataController::class, 'index']);
+Route::get('/register/confirmation', function () {
+    return view('confirmation');
+});
+Route::get('/izin', function () {
+    return view('izin');
+});
+
+Route::get('/sakit', function () {
+    return view('sakit');
+});
+
 
 
 
